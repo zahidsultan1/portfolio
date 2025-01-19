@@ -328,6 +328,11 @@ img {
   transition: transform 0.3s;
 }
 
+.work__item h3
+{
+  font-size: 17px;;
+}
+
 .work__item:hover {
   transform: translateY(-10px);
 }

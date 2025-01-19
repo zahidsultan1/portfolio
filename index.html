@@ -42,7 +42,7 @@
                 <div class="home__data">
                     <h5 class="home__title">Hi,<br>I'am <span class="home__title-color">Zahid Sultan</span><br> DevOps & Cloud Engineer</h5>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="#contact" class="button">Get in Touch!</a>
                 </div>
 
                 <div class="home__img">
@@ -226,29 +226,47 @@
             <div class="work__container bd-grid">
                 <!-- First Work Item -->
                 <div class="work__item">
-                    <h3>Infrastructure as Code for k8s Cluster Deployment</h3>
-                    <p>Automated Kubernetes cluster deployment on AWS EKS for production workloads.</p>
+                    <h3>Environment Setup for JazzCash UBPS & Devportal on K8s.</h3>
+                    <p>Deployed JazzCash (UBPS and Devportal) projects on Kubernetes cluster, ensuring scalability, resilience, secure networking, and efficient performance monitoring.</p>
                     <button class="work__btn" onclick="toggleDetails('details1')">Show Details</button>
                     <div class="work__details" id="details1">
                         <ul>
-                            <li>Implemented Kubernetes clusters on AWS EKS using Terraform, ensuring scalability and security.</li>
-                            <li>Reduced infrastructure provisioning time by 70% with automation.</li>
-                            <li>Enabled multi-AZ deployment, auto-scaling, and load balancing for optimal performance.</li>
-                            <li>Developed CI/CD pipelines using Jenkins and GitLab CI.</li>
+                            <li>Installed and configured <strong>Ingress Contour</strong> using Helm for external network access, enabling secure routing of traffic to services.</li>
+                            <li>Set up the <strong>ELK Stack (Elasticsearch, Logstash, Kibana)</strong> via Helm for centralized API logging and visualization.</li>
+                            <li>Used <strong>dynamic provisioning storage classes</strong> with NFS to manage data persistence efficiently across the cluster.</li>
+                            <li>Deployed and configured the <strong>Grafana stack</strong> to monitor performance metrics and ensure high availability of services.
+                            </li>
+                            <li>Integrated <strong>cert-manager</strong> for automatic management and renewal of SSL/TLS certificates across all services.</li>
+                            <li>Installed a <strong>GitLab server</strong> for secure source code management (SCM) and collaboration within the development team.</li>
+                            <li>Set up <strong>Jenkins automation server</strong> using Helm, implemented a role-based strategy for secure access, and configured robust CI/CD pipelines.</li>
+                            <li><strong>Configured CI/CD pipelines for:</strong>
+                                <ul>
+                                    <li>BO-Portal (MERN stack Application).</li>
+                                    <li>Configured CICD Setup for WSO2 API Manager Gateway, and Identity Server. and for all APIs.</li>
+                                    <li>Deployed Custom Developer Portal through CICD pipeline with Nginx as a Loadbalancer.</li>
+                                </ul>
+                            </li>                            
                         </ul>
                     </div>
                 </div>
                 
                 <!-- Second Work Item -->
                 <div class="work__item">
-                    <h3>Cloud Migration and Optimization</h3>
-                    <p>Streamlined migration of on-premises applications to AWS Cloud.</p>
+                    <h3>AWS Infrastructure Setup for mydasma Application.</h3>
+                    <p> The mydasma project was deployed on AWS, ensuring scalability, high availability, and efficient traffic management with auto scaling and load balancing. </p>
                     <button class="work__btn" onclick="toggleDetails('details2')">Show Details</button>
                     <div class="work__details" id="details2">
+                        <!-- <h4 style="text-align: left;">Tools and Technologies:</h4> #responsive and working -->
                         <ul>
-                            <li>Designed and executed cloud migration plans, ensuring zero downtime.</li>
-                            <li>Optimized cloud resources, reducing costs by 30%.</li>
-                            <li>Configured secure access controls and monitoring for cloud environments.</li>
+                            <h4 style="margin-left: -20px;">Tools and Technologies:</h4>                            
+                            <li> <strong>AWS EC2</strong>: Ubuntu instances for hosting application.</li>
+                            <li> <strong>Bitbucket</strong>: SCM and version control.</li>
+                            <li> <strong>Jenkins</strong>: CI/CD pipelines for automation and deployments.</li>
+                            <li> <strong>AWS VPC</strong>: Network traffic management and firewall.</li>
+                            <li> <strong>AWS Auto Scaling</strong>: Dynamic scalability based on traffic demand.</li>
+                            <li> <strong>AWS Load Balancer</strong>: High availability and traffic distribution across instances.</li>
+                            <li> <strong>AWS CloudWatch</strong>: Performance, and log analytics.</li>
+                            <li> <strong>NGINX</strong>: Used for Reverse proxy.</li>                            
                         </ul>
                     </div>
                 </div>
@@ -321,7 +339,7 @@
                 <footer class="footer" id="contact">
                     <div class="contact-info" >
                         <h2>Contact Information</h2>
-                        <p><i class="fas fa-phone"></i> Phone: +9231204646444</p>
+                        <p><i class="fas fa-phone"></i> Phone: +923120464644</p>
                         <p><i class="fas fa-envelope"></i> Email: <a href="mailto:zahidsultan97499@gmail.com">zahidsultan97499@gmail.com</a></p>
                         <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/zahid-sultan-9862121ba" target="_blank">linkedin.com/zahidsultan98</a></p>
                     </div>
@@ -357,7 +375,7 @@
                     selectedDetails.style.maxHeight = null; // Collapse the section
                 } else {
                     selectedDetails.classList.add('active');
-                    selectedDetails.style.maxHeight = '400px'; // Set limited height for the section
+                    selectedDetails.style.maxHeight = '1165px'; // Set limited height for the section
                 }
             }
 
